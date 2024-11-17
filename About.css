@@ -1,0 +1,171 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 400px;
+}@font-face {
+  font-family: 'NanumSquareNeo-bRg';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/NanumSquareNeo-bRg.ttf);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* 화면 전체 높이 설정 */
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; /* 수평 스크롤 방지 */
+}
+
+
+/* 섹션 스타일 */
+#carousel_437f {
+  background-color: #A5DD9B; /* 원하는 배경색 */
+  width: 100vw; /* 화면 전체 너비 */
+  height: auto; /* 높이는 내용에 따라 자동 조정 */
+  min-height: 80vh; /* 화면의 최소 80% 높이 */
+  margin: 0; /* 기본 여백 제거 */
+  padding: 0; /* 내부 여백 제거 */
+  display: flex; /* 내부 콘텐츠 정렬 */
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box; /* 패딩 및 보더 포함 계산 */
+}
+
+
+/* 내부 요소 스타일 */
+#carousel_437f > .u-sheet.u-sheet-1 {
+  width: 100%; /* 내부 요소가 섹션 가로폭에 맞게 채움 */
+  max-width: none; /* 최대 폭 제한 해제 */
+  padding: 20px; /* 내부 여백 */
+  margin: 0; /* 외부 여백 제거 */
+  box-sizing: border-box; /* 패딩 및 보더 포함 계산 */
+}
+
+
+  /* 상단 텍스트 공간 */
+  .section-header {
+    text-align: center;
+    margin: 20px auto; /* 중앙 정렬 */
+    padding: 20px 0;
+    max-width: 800px; /* 내용 가로폭 제한 */
+  }
+
+  .header-title {
+    font-size: 28px; /* 제목 크기 */
+    font-weight: bold;
+    margin: 10px;
+    color: black; /* 어두운 초록색 */
+  }
+
+  .header-description {
+    font-size: 18px; /* 설명 크기 */
+    color: gray; /* 밝은 초록색 */
+    margin-top: 10px;
+  }
+
+/* 팀원 리스트 */
+.u-list-1 {
+  display: flex; /* 아이템들을 가로로 배치 */
+  justify-content: center; /* 전체 리스트를 화면 중앙에 정렬 */
+  gap: 20px; /* 상자들 간의 간격 */
+  flex-wrap: wrap; /* 화면이 좁아지면 줄바꿈 */
+  padding: 0; /* 기본 패딩 제거 */
+  margin: 0 auto; /* 수평 여백을 자동으로 설정하여 중앙 정렬 */
+  width: 100%; /* 리스트가 전체 너비를 차지하도록 설정 */
+  max-width: 1200px; /* 최대 너비 제한 */
+}
+
+
+/* 개별 박스(div) 스타일 */
+.div-background {
+  background-color: #FFFFFF; /* 배경색 */
+  padding: 20px; /* 내부 여백 */
+  border-radius: 10px; /* 부드러운 모서리 */
+  width: 250px; /* 박스의 가로 크기 */
+  height: 150px; /* 박스의 세로 크기 */
+  display: flex; /* Flexbox로 내용 정렬 */
+  flex-direction: column; /* 세로 정렬 */
+  align-items: center; /* 가로 중앙 정렬 */
+  justify-content: center; /* 세로 중앙 정렬 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 약간의 그림자 */
+  transition: transform 0.3s; /* 호버 효과를 위한 부드러운 전환 */
+}
+
+/* 박스 hover 효과 */
+.div-background:hover {
+  transform: scale(1.05); /* 마우스를 올리면 박스 확대 */
+}
+
+
+/* Repeater 컨테이너 */
+.u-repeater-1 {
+  display: flex; /* Flexbox 사용 */
+  flex-wrap: wrap; /* 줄바꿈 허용 */
+  justify-content: center; /* 전체 중앙 정렬 */
+  gap: 20px; /* 아이템 간 간격 */
+  max-width: 900px; /* 최대 너비 제한 */
+  margin: 0 auto; /* 수평 중앙 정렬 */
+}
+
+/* Repeater 아이템 */
+.u-repeater-item {
+  flex: 0 1 calc(30% - 20px); /* 기본적으로 30% 너비 */
+  box-sizing: border-box; /* 여백 포함 계산 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+/* 두 번째 줄 아이템들도 동일한 너비를 가지도록 수정 */
+.u-repeater-item:nth-child(4),
+.u-repeater-item:nth-child(5) {
+  flex: 0 1 calc(30% - 20px); /* 첫 번째 줄 아이템들과 동일한 너비 */
+}
+
+
+
+.u-section-1 .u-sheet-1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+
+/* 이미지를 포함한 스타일 */
+.u-image-circle {
+  width: 80px; /* 원의 크기를 줄임 */
+  height: 80px;
+  border-radius: 50%; /* 원형으로 만듦 */
+  object-fit: cover; /* 이미지가 원 안에 꽉 차도록 */
+  margin-bottom: 10px; /* 이미지와 텍스트 간 간격 */
+}
+
+/* 텍스트 가운데 정렬 */
+.u-text-default {
+  text-align: center; /* 텍스트 가로 가운데 정렬 */
+  font-size: 16px; /* 글씨 크기 조정 */
+  font-weight: bold; /* 텍스트 강조 */
+  color: #333333; /* 텍스트 색상 */
+  margin: 0; /* 기본 여백 제거 */
+}
+
+
+/* Footer를 화면 하단에 고정 */
+footer.u-footer {
+  position: fixed; /* 화면 하단에 고정 */
+  bottom: 0; /* 하단에 위치 */
+  left: 0; /* 왼쪽 끝에 위치 */
+  width: 100%; /* 화면 가로폭에 맞춤 */
+  
+  color: #ffffff; /* 텍스트 색상 */
+  padding: 0 0; /* 상하 여백 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  z-index: 10; /* 다른 요소 위에 표시되도록 설정 */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* 약간의 그림자 */
+}
+
+section, footer {
+  margin: 0;
+  padding: 0; 
+}
+
+
